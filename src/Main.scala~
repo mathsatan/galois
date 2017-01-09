@@ -1,0 +1,22 @@
+/**
+  * Created by max on 10/7/2016.
+  */
+object Main {
+  def main(args: Array[String]): Unit = {
+    val a = Polynom(Integer.parseInt("1011", 2), 8)
+    val b = Polynom(Integer.parseInt("11", 2), 8)
+    print(a + " * " + b + "\n")
+    print(a.inverse + "\n")
+print(IrreduciblePolinomial4 + "\n")
+    //print(evclid(7, 256))
+  }
+
+def isPrime(val x: Int): Boolean = {
+	var i = Math.ceil(Math.sqrt(Math.abs(x))).toInt
+	while(i > 2){
+		if (x%i == 0) return false
+		i = i - 1
+	}
+	return true
+}
+}

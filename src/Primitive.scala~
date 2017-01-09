@@ -1,0 +1,9 @@
+object Pol extends Enumeration{
+	type Pol = Value
+	val One = Value(Integer.parseInt("11010", 2))
+val One = Value(Integer.parseInt("11010", 2))
+val One = Value(Integer.parseInt("11010", 2))
+val One = Value(Integer.parseInt("11010", 2))
+val One = Value(Integer.parseInt("11010", 2))
+
+}

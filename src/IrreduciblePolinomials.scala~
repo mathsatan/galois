@@ -1,0 +1,12 @@
+object IrreduciblePolinomials extends Enumeration{
+	type IrreduciblePolinomials = Value
+
+val IrreduciblePolinomial1 = 3		//Value(Integer.parseInt("11", 2))
+val IrreduciblePolinomial2 = 7		//Value(Integer.parseInt("111", 2))
+val IrreduciblePolinomial3 = 11		//Value(Integer.parseInt("1011", 2))
+val IrreduciblePolinomial4 = 19		//Value(Integer.parseInt("10011", 2))
+val IrreduciblePolinomial5 = 37		//Value(Integer.parseInt("100101", 2))
+val IrreduciblePolinomial6 = 67		//Value(Integer.parseInt("1000011", 2))
+val IrreduciblePolinomial7 = 131	//Value(Integer.parseInt("10000011", 2))
+val IrreduciblePolinomial8 = 283	//Value(Integer.parseInt("100011011", 2))
+}

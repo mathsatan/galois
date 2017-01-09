@@ -1,0 +1,107 @@
+/**
+  * Polynoms in GF(2^m)
+  * Coefficients in GF(2)
+  * p - init polynom
+  * module - modular polynom, should be < 2^m
+  */
+
+case class Polynom(p: Int = 0, m: Int = 8) extends GF{
+  private var polynom: Int = p
+  private val MAX_BIT = m
+  private val module = Integer.parseInt("11010", 2)
+
+  override def +(p: Polynom): Polynom = {
+    Polynom(this.polynom ^ p.polynom, MAX_BIT)
+  }
+  override def -(p: Polynom): Polynom = {  // In this case add and subtract are the same
+    this.+(p)
+  }
+  override def *(p: Polynom): Polynom = {
+    val mask: Int = (1 << (MAX_BIT + 1) - 1)	//Math.pow(2, MAX_BIT).toInt - 1
+    val max = this.order
+    var resultPolynom: Int = 0
+    var tempPolynom: Int = p.polynom
+    var i: Int = 1
+    while(i <= max){
+      if ((tempPolynom >> (MAX_BIT - 1)) == 0){
+        tempPolynom = (tempPolynom << 1) & mask
+        //print("# " + Integer.toBinaryString(tempPolynom) + "\n")
+      }else{
+        tempPolynom = (tempPolynom << 1) & mask
+       // print("1) tempPolynom << 1 = " + Integer.toBinaryString(tempPolynom) + "\n")
+        tempPolynom = ((tempPolynom ^ module) + 1) & mask
+        //print("# "+ Integer.toBinaryString(tempPolynom) + "\n")
+      }
+      if ((this.polynom & Math.pow(2, i).toInt) == Math.pow(2, i).toInt){
+        resultPolynom = resultPolynom ^ tempPolynom
+      }
+      i = i + 1
+    }
+
+    Polynom(resultPolynom, MAX_BIT)
+  }
+
+  override def /(p: Polynom): (Polynom, Int) = {
+    var a: Polynom = this.copy()
+    val b: Polynom = p.copy()
+
+    if (a.order < b.order){
+      return (Polynom(0, MAX_BIT), a.polynom)
+    }
+
+    var result: Int = 0
+    var c: Polynom = Polynom(0, this.MAX_BIT)
+    val d: Polynom = Polynom(0, this.MAX_BIT)
+    var t: Int = 0
+
+    while(a.order >= b.order){
+      t = a.order - b.order
+      if (t == 0)
+        d.polynom = 1
+      else d.polynom = (1 << t)
+      result ^= d.polynom
+      c = d*b
+      a=a+c
+    }
+    (Polynom(result, MAX_BIT), a.polynom)
+  }
+
+  def order: Int = {
+    var i: Int = MAX_BIT - 1
+      while(i >= 0){
+        if ((polynom >> i) == 1)
+          return i
+        i = i - 1
+      }
+    -1
+  }
+def addInverse = {
+	this.polynom
+}
+
+def mulInverse = {
+    var r1: Polynom = this
+    var r2: Polynom = Polynom(module)
+    var s1 = Polynom(1)
+    var s2 = Polynom()
+    var t1 = Polynom()
+    var t2 = Polynom(1)
+    var t = Polynom()
+    var s = Polynom()
+    var r = Polynom()
+    while(r2 > 0){
+      val q: Polynom = (r1 / r2)._1
+      r = r1-q*r2; r1 = r2; r2 = r
+
+      s = s1-q*s2; s1 = s2; s2 = s
+
+      t = t1-q*t2; t1 = t2; t2 = t      
+    }
+
+    t1
+  }
+
+  override def toString: String = {
+    "gf(2^" + MAX_BIT + "): " + Integer.toBinaryString(polynom)
+  }
+}
