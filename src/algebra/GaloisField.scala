@@ -56,7 +56,7 @@ class GaloisField(_initBitNumber: Int = FiniteField.DEFAULT_BIT_NUMBER) extends 
     }
 
     override def hashCode(): Int = this.p.polynomial.hashCode()
-    
+
     override protected val p = Polynomial(_p)
     /**
       * Copy constructor

@@ -2,7 +2,8 @@ import algebra._
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val n = 3
+    val n = 5
+    print(IrreduciblePolynomials(n))
     val gf: GaloisField = GaloisField(n)
 		for(i <- 1 until (1 << n)){
       for(j <- 1 until (1 << n)){

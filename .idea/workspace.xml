@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2498c320-5d0f-4ba7-af08-7a6683b41ca1" name="Default" comment="" />
+    <list default="true" id="2498c320-5d0f-4ba7-af08-7a6683b41ca1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.scala" afterPath="$PROJECT_DIR$/src/Main.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algebra/GaloisField.scala" afterPath="$PROJECT_DIR$/src/algebra/GaloisField.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algebra/IrreduciblePolynomials.scala" afterPath="$PROJECT_DIR$/src/algebra/IrreduciblePolynomials.scala" />
+    </list>
     <ignored path="galua.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GaloisField.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GaloisField.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algebra/GaloisField.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+            <state relative-caret-position="170">
+              <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
               <folding>
                 <element signature="e#700#818#0" expanded="false" />
                 <element signature="e#1094#1502#0" expanded="false" />
@@ -41,18 +46,18 @@
       <file leaf-file-name="FiniteField.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algebra/polynomials/FiniteField.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="442">
               <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="255">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -61,8 +66,8 @@
       <file leaf-file-name="IrreduciblePolynomials.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algebra/IrreduciblePolynomials.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="276">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="e#17#54#0" expanded="true" />
               </folding>
@@ -91,6 +96,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -114,10 +122,10 @@
         <option value="$PROJECT_DIR$/src/algebra/polynomials/GFPolynomial.scala" />
         <option value="$PROJECT_DIR$/src/algebra/ExtendedGF.scala" />
         <option value="$PROJECT_DIR$/src/algebra/polynomials/Polynomial.scala" />
-        <option value="$PROJECT_DIR$/src/Main.scala" />
         <option value="$PROJECT_DIR$/src/algebra/polynomials/FiniteField.scala" />
-        <option value="$PROJECT_DIR$/src/algebra/IrreduciblePolynomials.scala" />
         <option value="$PROJECT_DIR$/src/algebra/GaloisField.scala" />
+        <option value="$PROJECT_DIR$/src/algebra/IrreduciblePolynomials.scala" />
+        <option value="$PROJECT_DIR$/src/Main.scala" />
       </list>
     </option>
   </component>
@@ -158,6 +166,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -262,9 +273,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -800,12 +808,13 @@
       <workItem from="1481576488062" duration="6205000" />
       <workItem from="1481907267974" duration="105000" />
       <workItem from="1483912508358" duration="5910000" />
-      <workItem from="1483981188936" duration="2997000" />
+      <workItem from="1483981188936" duration="3444000" />
+      <workItem from="1484353682683" duration="1188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139364000" />
+    <option name="totallyTimeSpent" value="140999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -855,7 +864,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="59" />
+      <option name="time" value="60" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1085,38 +1094,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algebra/polynomials/FiniteField.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="442">
           <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.scala">
+    <entry file="file://$PROJECT_DIR$/src/algebra/GaloisField.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding>
+            <element signature="e#700#818#0" expanded="false" />
+            <element signature="e#1094#1502#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algebra/IrreduciblePolynomials.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="276">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
             <element signature="e#17#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algebra/GaloisField.scala">
+    <entry file="file://$PROJECT_DIR$/src/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
-          <folding>
-            <element signature="e#700#818#0" expanded="false" />
-            <element signature="e#1094#1502#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
